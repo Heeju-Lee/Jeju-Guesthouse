@@ -1,0 +1,335 @@
+
+@font-face {
+    font-family: 'PTAnboR';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408@1.0/PTAnboR.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 전체 레이아웃 기본 스타일 */
+body {
+	font-family : 'PTAnboR',  -serif !important;
+}
+
+/* header */ 
+header {
+	display: flex;
+	align-items: center; /* 세로 가운데 정렬 */
+	justify-content: space-between; /* 좌우 끝 정렬 */
+	border-bottom: 1px gray;
+	padding: 0 70px; /* 좌우 패딩 추가 */
+	height: 70px;
+	background-color: #f8f8f8; /* 배경색 */
+}
+
+header .headerLink {
+	display: flex;
+	align-items: center; /* 세로 가운데 정렬 */
+	gap: 30px;	/* 링크 간 간격  */
+}
+
+header h1{
+	font-size: 30px;
+	margin: 0px;
+}
+
+header h3 {
+	color: black;
+	margin: 0; /* 제목 요소의 기본 마진 제거 */
+}
+
+header a {
+	color: black;
+	text-decoration: none;
+}
+
+header a:hover {
+	color: #666; /* 링크에 마우스 올릴 때 색상 변경 */
+	text-decoration: none;
+}
+
+/* footer */
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top: 1px gray;
+	background-color: #f8f8f8;
+	padding: 20px 0;
+}
+
+footer div {
+	display: flex;
+	justify-content: space-between;
+	width: 940px;
+	color: #777;
+}
+
+footer section {
+	width: 300px;
+}
+
+footer h6 {
+	color: black;
+	margin-bottom: 10px; /* 제목 하단 간격 추가 */
+}
+
+footer a {
+	color: #333;
+	text-decoration: none;
+}
+
+footer ul {
+	margin: 0;
+	padding-left: 20px; /* 리스트 패딩 왼쪽에 추가 */
+	list-style: square;
+	color: #565656;
+}
+
+footer ul li a {
+	display: block;
+	text-decoration: none;
+	font-family: 'GmarketSansMedium';
+}
+/*===============================================================*/
+.container{
+	width: 90%;
+	padding-top : 10px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	margin-top: 80px;
+}
+
+/* main */
+#mainImg img {
+	margin: 0 auto;
+	width: 100%;
+	height: 500px;
+	object-fit: cover;
+}
+
+#sectionTitle{
+	font-family : 'PTAnboR',  -serif !important;
+}
+
+/*content(상세설명 + sticky reservaion)*/
+#content{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	height: auto;
+	overflow: visible;
+	gap: 30px;
+	font-family: 'GmarketSansMedium';
+}
+
+#details{
+	display: flex;
+	flex-direction: column;
+}
+
+#booking{
+    position: sticky;
+    top: 20px;
+    margin-bottom: 20px;
+    align-self: flex-start;
+}
+
+#desc{
+    text-indent: 0; /* 첫 줄 들여쓰기 제거 */
+}
+
+/* border bottom */
+#desc, #reviews, #chart-containers{
+	border-bottom: 0.5px solid lightgray;
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+}
+
+/* border top */
+#chart-containerAndReview, #rooms{
+	border-top: 0.5px solid lightgray;
+	order: 0;
+}
+
+/* 공통 margin */
+#desc, #offers, #rooms, #chart-containers, #reviews, #map{
+	padding: 20px 0px;
+}
+
+
+/* 폼 css */
+#bookFrm{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0px;
+	gap: 24px;
+	width: 330px;
+	border: 1px solid lightgray !important;
+	border-radius: 10px !important;
+	padding: 20px;
+	margin: 0px 0px;
+	box-shadow: 5px 5px 15px #b9b9b9;
+	background: rgba(255, 153, 0, 0.1);
+}
+
+#reserve{
+	width:100%; 
+	background: rgba(255, 153, 0);
+	color: #f8f8f8;
+}
+
+#nightP, #input, #submit, #totalP{
+	width: 250px;
+}
+
+#totalP{
+	border-top: 0.5px solid lightgray;
+	padding-top: 20px;
+	text-align: right;
+}
+
+#nightP{
+	text-align: left;
+}
+
+
+/* offers 영역*/
+#offerlist{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	padding: 0px;
+	gap: 20px;
+}
+
+#offer{
+	width: 300px;
+}
+
+#offer img{
+	width: 40px;
+	height: 40px;
+}
+
+/* rooms 영역*/
+#roomlist{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	gap: 10px;
+}
+
+#room{
+	width: 33.33%;
+}
+
+#room img{
+	width: 100%;
+	height: 150px;
+	border-radius: 10px;
+	object-fit: cover;
+	margin-bottom: 10px;
+}
+
+/*chart-container 영역 flex*/
+#chart-containerAndReview {
+	width: 100%;
+    display: flex;
+    flex-direction: column;
+	font-family: 'GmarketSansMedium';
+}
+
+#chart-containers{
+	display: flex;
+	flex-wrap: wrap; /* 차트가 화면 크기에 맞게 줄 바꿈 */
+	flex-direction: row;
+	align-items: center; 
+	justify-items: center;
+	justify-content: space-between;
+}
+
+#chart-title{
+	display: inline-flex;
+}
+
+/*chart-container style*/
+.chart-container{
+    flex: 1 1 30%; /* 각 차트가 화면의 30%를 차지하도록 설정 */
+    max-width: 33%; /* 최대 너비를 33%로 설정 */
+	height: max-content;
+	text-align: center;
+	box-sizing: border-box; 
+	align-items: flex-start;
+}
+
+.chart-container canvas {
+    max-width: 100%; /* 캔버스가 부모 컨테이너를 초과하지 않도록 설정 */
+	margin: 0 auto;
+}
+
+/*star rating*/
+.star-ratings {
+	display: flex;
+	margin: 0 auto;
+	align-items: center;
+    justify-content: center; 
+	font-size: 30px;
+	align-items: center;
+	color: #aaa9a9; 
+	position: relative;
+	unicode-bidi: bidi-override;
+	width: max-content;
+	-webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+	-webkit-text-stroke-width: 1.5px;
+	-webkit-text-stroke-color: rgba(255, 153, 0);
+}
+ 
+.star-ratings-fill {
+	color: #fff58c;
+	position: absolute;
+	margin: 0 auto;
+	z-index: 1;
+	display: flex;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	-webkit-text-fill-color: rgba(255, 153, 0);
+}
+
+.star-ratings-base {
+    display: flex; /* 수평 정렬을 위해 추가 */
+}
+/* reviews 관련 css */
+#reviews{
+	display: flex;
+	flex-direction: column;
+	justify-items: flex-start;
+}
+#review{
+	display: flex;
+	flex-direction: row;
+	justify-items: flex-start;
+	margin: 10px 0px;
+}
+#review img{
+	margin-right: 20px;
+	width: 70px; 
+	height: 70px; 
+	border-radius: 50%; 
+	margin-bottom: 10px;
+}
