@@ -22,9 +22,13 @@
 <br>
 
 ### :tangerine: 메인페이지
-[메인페이지.webm](https://github.com/user-attachments/assets/5a748baa-2124-436b-9381-1d9589ce3d49)
+https://github.com/user-attachments/assets/ec1729bb-81e8-4cf3-a7ad-2d715bce9fa8
 
 <br>
 
 ### :tangerine:상세페이지
-[상세페이지.webm](https://github.com/user-attachments/assets/85435d27-390e-4ddb-8349-e435db1e876f)
+https://github.com/user-attachments/assets/c07f7a18-b416-4c3e-af8b-3d3a65622b19
+
+
+
+
